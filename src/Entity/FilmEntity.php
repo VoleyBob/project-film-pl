@@ -28,6 +28,11 @@ class FilmEntity
      */
     private $category;
 
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $description = '';
+
     public function __construct()
     {
         $this->category = new ArrayCollection();
@@ -72,6 +77,18 @@ class FilmEntity
         if ($this->category->contains($category)) {
             $this->category->removeElement($category);
         }
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): self
+    {
+        $this->description = $description;
 
         return $this;
     }

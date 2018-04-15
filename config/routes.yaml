@@ -12,8 +12,12 @@ login:
 
 category:
     path: /category/{id}
-    controller: App\Controller\CategoryController::listFilmsFromCategory
+    controller: App\Controller\CategoryController::showFilms
 
 user:
     path: /user/{id}
-    controller: App\Controller\UserController::showUserDetails
+    controller: App\Controller\UserController::profile
+
+newCategory:
+    path: /new/category
+    controller: App\Controller\CategoryController::addCategory
