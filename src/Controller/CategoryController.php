@@ -59,6 +59,42 @@ class CategoryController extends Controller
     */
     }
 
+
+
+    public function removeCategory(int $id)      // kod jest  chroniony przed INCJECTION; jeszcze lepiej: INT
+    {
+        $category = $this
+        ->getDoctrine()
+        ->getRepository(CategoryEntity::class)
+        ->find($id);
+
+        \dump($category);
+
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($category);
+        $em->flush();
+
+        //        return $this->render('category/list-categories.html.twig');
+
+        /*
+        $categories = $this
+        ->getDoctrine()
+        ->getRepository(CategoryEntity::class)
+        ->findAll();
+        \dump($categories);
+
+        return $this->render('category/list-categories.html.twig', [
+        'categories' => $categories,
+        ]);
+        */
+
+//        return $this->showCategories();
+        return $this->redirectToRoute('categories');
+    
+    }
+
+
+
     public function showCategories()
     {
         $categories = $this

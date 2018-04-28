@@ -31,7 +31,7 @@ class CategoryEntity
     /**
      * @ORM\Column(type="boolean")
      */
-    private $hidden = 1;
+    private $hidden = true;
 
     public function __construct()
     {

@@ -11,7 +11,28 @@
         <h1>Ilość kategorii: {{ categories|length }}</h1>
         <ul>
             {% for category in categories %}
-                <li><a href="/category/{{ category.getId }}">{{ loop.index }}. {{ category }}</a></li>
+                <li>
+                    <p style="padding: 5px; ">
+                        <a href="/category/{{ category.getId }}">{{ loop.index }}. {{ category }}</a>
+                            {% if is_granted('ROLE_ADMIN') %}
+                                <a class="btn btn-danger float-right" href="/remove/category/{{ category.getId }}">Usuń</a>
+                            {% endif %}
+                    </p>
+
+<!-- złe rozwiązanie                     
+                    <p style="padding: 5px; ">
+                        <a href="/category/{{ category.getId }}">{{ loop.index }}. {{ category }}</a>
+                            {% if is_granted('ROLE_ADMIN') %}
+                                <button class="btn btn-danger float-right">Usuń</button>
+                            {% endif %}
+                    </p>
+
+                    <form action="/remove/category/{{ category.getId }}"
+                        <button class="btn btn-danger float-right">Usuń</button>
+                    </form>            
+-->
+
+                </li>
             {% else %}
                 Brak kategorii.
             {% endfor %}

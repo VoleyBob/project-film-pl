@@ -40,3 +40,7 @@ newComment:
 
 logout:
     path: /logout
+
+removeCategory:
+    path: /remove/category/{id}
+    controller: App\Controller\CategoryController::removeCategory
