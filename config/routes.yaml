@@ -21,3 +21,12 @@ user:
 newCategory:
     path: /new/category
     controller: App\Controller\CategoryController::addCategory
+
+categories:
+    path: /category
+    controller: App\Controller\CategoryController::showCategories
+
+categoryFilter:
+    path: /category/filter/{letter}
+    controller: App\Controller\CategoryController::filter
+

@@ -19,6 +19,26 @@ class CategoryEntityRepository extends ServiceEntityRepository
         parent::__construct($registry, CategoryEntity::class);
     }
 
+    public function findHiddenCategories()
+    {
+        return $this->findBy([
+            'hidden' => true,
+        ]);
+    }
+
+
+    
+    
+    public function findByFirstLetter($letter)
+    {
+        return $this->createQueryBuilder('c')
+            ->where('c.name LIKE :letter')
+            ->setParameter('letter', $letter.'%')
+            ->getQuery()
+            ->getResult();
+    }
+
+
 //    /**
 //     * @return CategoryEntity[] Returns an array of CategoryEntity objects
 //     */

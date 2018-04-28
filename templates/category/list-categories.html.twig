@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+    {% block title %}
+        list-films-from-category
+    {% endblock %}  
+
+    {% block header %}
+       Lista kategorii!
+    {% endblock %}    
+
+    {% block body %}
+        <h1>Ilość kategorii: {{ categories|length }}</h1>
+        <ul>
+            {% for category in categories %}
+                <li><a href="/category/{{ category.getId }}">{{ loop.index }}. {{ category }}</a></li>
+            {% else %}
+                Brak kategorii.
+            {% endfor %}
+        </ul>
+    {% endblock %}

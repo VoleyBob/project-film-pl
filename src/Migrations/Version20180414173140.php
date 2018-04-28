@@ -15,8 +15,8 @@ class Version20180414173140 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'sqlite', 'Migration can only be executed safely on \'sqlite\'.');
 
-        $this->addSql('ALTER TABLE film_entity ADD COLUMN description CLOB NOT NULL');
-        $this->addSql('ALTER TABLE film_entity ADD COLUMN length SMALLINT NOT NULL');
+//        $this->addSql('ALTER TABLE film_entity ADD COLUMN description CLOB');
+//        $this->addSql('ALTER TABLE film_entity ADD COLUMN length SMALLINT NOT NULL');
         $this->addSql('DROP INDEX IDX_D7479B714645AF6D');
         $this->addSql('DROP INDEX IDX_D7479B71B5E9236E');
         $this->addSql('CREATE TEMPORARY TABLE __temp__film_entity_category_entity AS SELECT film_entity_id, category_entity_id FROM film_entity_category_entity');

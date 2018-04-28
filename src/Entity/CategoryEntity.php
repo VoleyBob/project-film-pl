@@ -28,10 +28,22 @@ class CategoryEntity
      */
     private $film;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $hidden = 1;
+
     public function __construct()
     {
         $this->film = new ArrayCollection();
     }
+
+
+    public function __toString(): string
+    {
+        return $this->getName(). ' (' . $this->getId() . ')';
+    }
+
 
     public function getId()
     {
@@ -74,6 +86,18 @@ class CategoryEntity
             $this->film->removeElement($film);
             $film->removeCategory($this);
         }
+
+        return $this;
+    }
+
+    public function getHidden(): ?bool
+    {
+        return $this->hidden;
+    }
+
+    public function setHidden(bool $hidden): self
+    {
+        $this->hidden = $hidden;
 
         return $this;
     }
