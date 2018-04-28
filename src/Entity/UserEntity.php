@@ -43,6 +43,12 @@ class UserEntity
         $this->comment = new ArrayCollection();
     }
 
+    public function __toString(): string
+    {
+        return $this->getLogin();
+    }
+
+
     public function getId()
     {
         return $this->id;

@@ -27,16 +27,21 @@ class CategoryController extends Controller
             ->add('name', TextType::class)
             ->add('save', SubmitType::class)
             ->getForm();
-        
+
         $form->handleRequest($request);
         
+        
         if($form->isSubmitted() && $form->isValid()) {
+            if ($this->get('security.authorization_checker')->isGranted('ROLE_ADMIN')) {
+                $category->setHidden(false);
+            }
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($category);
             $entityManager->flush();
             return $this->redirectToRoute('index');
         }
-            
+
+
         return $this->render('category/new.html.twig', [
             'controller_name' => 'CategoryController',
             'form' => $form->createView(),

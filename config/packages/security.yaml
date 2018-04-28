@@ -9,6 +9,9 @@ security:
                     rado:
                         password: rado123
                         roles: 'ROLE_ADMIN'
+                    dyzio:
+                        password: dyzio123
+                        roles: 'ROLE_USER'
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
@@ -16,6 +19,9 @@ security:
         main:
             anonymous: true
             http_basic: ~
+            logout:
+                path: /logout
+                target: /
 
             # activate different ways to authenticate
 
