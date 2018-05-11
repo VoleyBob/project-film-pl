@@ -101,4 +101,13 @@ class CategoryEntity
 
         return $this;
     }
+
+
+    public function getUrl(): string
+    {
+        return strtolower($this->name);
+    }
+
+
+
 }

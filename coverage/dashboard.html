@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for D:\szkolenie\project-film-pl\project-film-pl\src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/style.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src=".js/html5shiv.min.js"></script>
+  <script src=".js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">D:\szkolenie\project-film-pl\project-film-pl\src</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/CategoryController.php.html#10">App\Controller\CategoryController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414134827.php.html#11">DoctrineMigrations\Version20180414134827</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/FilmEntityRepository.php.html#15">App\Repository\FilmEntityRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CommentEntityRepository.php.html#15">App\Repository\CommentEntityRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CategoryEntityRepository.php.html#15">App\Repository\CategoryEntityRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180415101506.php.html#11">DoctrineMigrations\Version20180415101506</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414233116.php.html#11">DoctrineMigrations\Version20180414233116</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414173140.php.html#11">DoctrineMigrations\Version20180414173140</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414133926.php.html#11">DoctrineMigrations\Version20180414133926</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CommentController.php.html#13">App\Controller\CommentController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#12">App\Entity\FilmEntity</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/UserController.php.html#11">App\Controller\UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/FilmController.php.html#8">App\Controller\FilmController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/UserEntityRepository.php.html#15">App\Repository\UserEntityRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#12">App\Entity\UserEntity</a></td><td class="text-right">21%</td></tr>
+       <tr><td><a href="Kernel.php.html#12">App\Kernel</a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="Entity/CategoryEntity.php.html#12">App\Entity\CategoryEntity</a></td><td class="text-right">35%</td></tr>
+       <tr><td><a href="Entity/CommentEntity.php.html#10">App\Entity\CommentEntity</a></td><td class="text-right">42%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Entity/FilmEntity.php.html#12">App\Entity\FilmEntity</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#12">App\Entity\UserEntity</a></td><td class="text-right">173</td></tr>
+       <tr><td><a href="Entity/CategoryEntity.php.html#12">App\Entity\CategoryEntity</a></td><td class="text-right">76</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#10">App\Controller\CategoryController</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Kernel.php.html#12">App\Kernel</a></td><td class="text-right">31</td></tr>
+       <tr><td><a href="Controller/UserController.php.html#11">App\Controller\UserController</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Controller/CommentController.php.html#13">App\Controller\CommentController</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Entity/CommentEntity.php.html#10">App\Entity\CommentEntity</a></td><td class="text-right">19</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/CategoryController.php.html#12"><abbr title="App\Controller\CategoryController::showFilms">showFilms</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414133926.php.html#27"><abbr title="DoctrineMigrations\Version20180414133926::down">down</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#69"><abbr title="App\Entity\UserEntity::getPassword">getPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#74"><abbr title="App\Entity\UserEntity::setPassword">setPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#81"><abbr title="App\Entity\UserEntity::getEmail">getEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#86"><abbr title="App\Entity\UserEntity::setEmail">setEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#96"><abbr title="App\Entity\UserEntity::getComment">getComment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#101"><abbr title="App\Entity\UserEntity::addComment">addComment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#111"><abbr title="App\Entity\UserEntity::removeComment">removeComment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#23"><abbr title="App\Kernel::getLogDir">getLogDir</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#38"><abbr title="App\Kernel::configureContainer">configureContainer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#53"><abbr title="App\Kernel::configureRoutes">configureRoutes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414133926.php.html#13"><abbr title="DoctrineMigrations\Version20180414133926::up">up</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414134827.php.html#13"><abbr title="DoctrineMigrations\Version20180414134827::up">up</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#46"><abbr title="App\Entity\UserEntity::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414134827.php.html#30"><abbr title="DoctrineMigrations\Version20180414134827::down">down</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414173140.php.html#13"><abbr title="DoctrineMigrations\Version20180414173140::up">up</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414173140.php.html#31"><abbr title="DoctrineMigrations\Version20180414173140::down">down</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414233116.php.html#13"><abbr title="DoctrineMigrations\Version20180414233116::up">up</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180414233116.php.html#36"><abbr title="DoctrineMigrations\Version20180414233116::down">down</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180415101506.php.html#13"><abbr title="DoctrineMigrations\Version20180415101506::up">up</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Migrations/Version20180415101506.php.html#41"><abbr title="DoctrineMigrations\Version20180415101506::down">down</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CategoryEntityRepository.php.html#17"><abbr title="App\Repository\CategoryEntityRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CategoryEntityRepository.php.html#22"><abbr title="App\Repository\CategoryEntityRepository::findHiddenCategories">findHiddenCategories</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CategoryEntityRepository.php.html#32"><abbr title="App\Repository\CategoryEntityRepository::findByFirstLetter">findByFirstLetter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CommentEntityRepository.php.html#17"><abbr title="App\Repository\CommentEntityRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/FilmEntityRepository.php.html#17"><abbr title="App\Repository\FilmEntityRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#52"><abbr title="App\Entity\UserEntity::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#89"><abbr title="App\Entity\FilmEntity::setDescription">setDescription</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#23"><abbr title="App\Controller\CategoryController::addCategory">addCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/CategoryEntity.php.html#68"><abbr title="App\Entity\CategoryEntity::getFilm">getFilm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#64"><abbr title="App\Controller\CategoryController::removeCategory">removeCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#98"><abbr title="App\Controller\CategoryController::showCategories">showCategories</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#111"><abbr title="App\Controller\CategoryController::filter">filter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CommentController.php.html#15"><abbr title="App\Controller\CommentController::showComment">showComment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CommentController.php.html#24"><abbr title="App\Controller\CommentController::addComment">addComment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/FilmController.php.html#10"><abbr title="App\Controller\FilmController::showFilm">showFilm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/UserController.php.html#13"><abbr title="App\Controller\UserController::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/UserController.php.html#21"><abbr title="App\Controller\UserController::profile">profile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/UserController.php.html#30"><abbr title="App\Controller\UserController::addUser">addUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/CategoryEntity.php.html#42"><abbr title="App\Entity\CategoryEntity::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/CategoryEntity.php.html#48"><abbr title="App\Entity\CategoryEntity::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/CategoryEntity.php.html#73"><abbr title="App\Entity\CategoryEntity::addFilm">addFilm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#84"><abbr title="App\Entity\FilmEntity::getDescription">getDescription</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/CategoryEntity.php.html#83"><abbr title="App\Entity\CategoryEntity::removeFilm">removeFilm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/CategoryEntity.php.html#98"><abbr title="App\Entity\CategoryEntity::setHidden">setHidden</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/CommentEntity.php.html#30"><abbr title="App\Entity\CommentEntity::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/CommentEntity.php.html#35"><abbr title="App\Entity\CommentEntity::getContent">getContent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/CommentEntity.php.html#40"><abbr title="App\Entity\CommentEntity::setContent">setContent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#36"><abbr title="App\Entity\FilmEntity::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#41"><abbr title="App\Entity\FilmEntity::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#46"><abbr title="App\Entity\FilmEntity::getName">getName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#51"><abbr title="App\Entity\FilmEntity::setName">setName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#61"><abbr title="App\Entity\FilmEntity::getCategory">getCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#66"><abbr title="App\Entity\FilmEntity::addCategory">addCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#75"><abbr title="App\Entity\FilmEntity::removeCategory">removeCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/UserEntityRepository.php.html#17"><abbr title="App\Repository\UserEntityRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/CategoryController.php.html#23"><abbr title="App\Controller\CategoryController::addCategory">addCategory</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controller/CommentController.php.html#24"><abbr title="App\Controller\CommentController::addComment">addComment</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/UserController.php.html#30"><abbr title="App\Controller\UserController::addUser">addUser</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#111"><abbr title="App\Entity\UserEntity::removeComment">removeComment</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Entity/CategoryEntity.php.html#73"><abbr title="App\Entity\CategoryEntity::addFilm">addFilm</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/CategoryEntity.php.html#83"><abbr title="App\Entity\CategoryEntity::removeFilm">removeFilm</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/CommentEntity.php.html#35"><abbr title="App\Entity\CommentEntity::getContent">getContent</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#46"><abbr title="App\Entity\FilmEntity::getName">getName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#66"><abbr title="App\Entity\FilmEntity::addCategory">addCategory</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#75"><abbr title="App\Entity\FilmEntity::removeCategory">removeCategory</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/FilmEntity.php.html#84"><abbr title="App\Entity\FilmEntity::getDescription">getDescription</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#69"><abbr title="App\Entity\UserEntity::getPassword">getPassword</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#81"><abbr title="App\Entity\UserEntity::getEmail">getEmail</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/UserEntity.php.html#101"><abbr title="App\Entity\UserEntity::addComment">addComment</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.0.3</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.11</a> with <a href="https://xdebug.org/">Xdebug 2.6.0</a> and <a href="https://phpunit.de/">PHPUnit 7.1.4</a> at Sun Apr 29 15:17:27 CEST 2018.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/bootstrap.min.js" type="text/javascript"></script>
+  <script src=".js/holder.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([14,0,0,2,1,1,0,0,0,0,0,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([57,0,0,0,0,0,0,0,0,0,0,13], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,8,"<a href=\"Controller\/CategoryController.php.html#10\">App\\Controller\\CategoryController<\/a>"],[0,4,"<a href=\"Controller\/CommentController.php.html#13\">App\\Controller\\CommentController<\/a>"],[100,1,"<a href=\"Controller\/DefaultController.php.html#8\">App\\Controller\\DefaultController<\/a>"],[0,1,"<a href=\"Controller\/FilmController.php.html#8\">App\\Controller\\FilmController<\/a>"],[0,5,"<a href=\"Controller\/UserController.php.html#11\">App\\Controller\\UserController<\/a>"],[35,15,"<a href=\"Entity\/CategoryEntity.php.html#12\">App\\Entity\\CategoryEntity<\/a>"],[42.857142857142854,8,"<a href=\"Entity\/CommentEntity.php.html#10\">App\\Entity\\CommentEntity<\/a>"],[0,13,"<a href=\"Entity\/FilmEntity.php.html#12\">App\\Entity\\FilmEntity<\/a>"],[21.73913043478261,18,"<a href=\"Entity\/UserEntity.php.html#12\">App\\Entity\\UserEntity<\/a>"],[28.57142857142857,8,"<a href=\"Kernel.php.html#12\">App\\Kernel<\/a>"],[0,2,"<a href=\"Migrations\/Version20180414133926.php.html#11\">DoctrineMigrations\\Version20180414133926<\/a>"],[0,2,"<a href=\"Migrations\/Version20180414134827.php.html#11\">DoctrineMigrations\\Version20180414134827<\/a>"],[0,2,"<a href=\"Migrations\/Version20180414173140.php.html#11\">DoctrineMigrations\\Version20180414173140<\/a>"],[0,2,"<a href=\"Migrations\/Version20180414233116.php.html#11\">DoctrineMigrations\\Version20180414233116<\/a>"],[0,2,"<a href=\"Migrations\/Version20180415101506.php.html#11\">DoctrineMigrations\\Version20180415101506<\/a>"],[0,3,"<a href=\"Repository\/CategoryEntityRepository.php.html#15\">App\\Repository\\CategoryEntityRepository<\/a>"],[0,1,"<a href=\"Repository\/CommentEntityRepository.php.html#15\">App\\Repository\\CommentEntityRepository<\/a>"],[0,1,"<a href=\"Repository\/FilmEntityRepository.php.html#15\">App\\Repository\\FilmEntityRepository<\/a>"],[0,1,"<a href=\"Repository\/UserEntityRepository.php.html#15\">App\\Repository\\UserEntityRepository<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Controller\/CategoryController.php.html#12\">App\\Controller\\CategoryController::showFilms<\/a>"],[0,4,"<a href=\"Controller\/CategoryController.php.html#23\">App\\Controller\\CategoryController::addCategory<\/a>"],[0,1,"<a href=\"Controller\/CategoryController.php.html#64\">App\\Controller\\CategoryController::removeCategory<\/a>"],[0,1,"<a href=\"Controller\/CategoryController.php.html#98\">App\\Controller\\CategoryController::showCategories<\/a>"],[0,1,"<a href=\"Controller\/CategoryController.php.html#111\">App\\Controller\\CategoryController::filter<\/a>"],[0,1,"<a href=\"Controller\/CommentController.php.html#15\">App\\Controller\\CommentController::showComment<\/a>"],[0,3,"<a href=\"Controller\/CommentController.php.html#24\">App\\Controller\\CommentController::addComment<\/a>"],[100,1,"<a href=\"Controller\/DefaultController.php.html#10\">App\\Controller\\DefaultController::index<\/a>"],[0,1,"<a href=\"Controller\/FilmController.php.html#10\">App\\Controller\\FilmController::showFilm<\/a>"],[0,1,"<a href=\"Controller\/UserController.php.html#13\">App\\Controller\\UserController::login<\/a>"],[0,1,"<a href=\"Controller\/UserController.php.html#21\">App\\Controller\\UserController::profile<\/a>"],[0,3,"<a href=\"Controller\/UserController.php.html#30\">App\\Controller\\UserController::addUser<\/a>"],[100,1,"<a href=\"Entity\/CategoryEntity.php.html#36\">App\\Entity\\CategoryEntity::__construct<\/a>"],[0,1,"<a href=\"Entity\/CategoryEntity.php.html#42\">App\\Entity\\CategoryEntity::__toString<\/a>"],[0,1,"<a href=\"Entity\/CategoryEntity.php.html#48\">App\\Entity\\CategoryEntity::getId<\/a>"],[100,2,"<a href=\"Entity\/CategoryEntity.php.html#53\">App\\Entity\\CategoryEntity::getName<\/a>"],[100,1,"<a href=\"Entity\/CategoryEntity.php.html#58\">App\\Entity\\CategoryEntity::setName<\/a>"],[0,1,"<a href=\"Entity\/CategoryEntity.php.html#68\">App\\Entity\\CategoryEntity::getFilm<\/a>"],[0,2,"<a href=\"Entity\/CategoryEntity.php.html#73\">App\\Entity\\CategoryEntity::addFilm<\/a>"],[0,2,"<a href=\"Entity\/CategoryEntity.php.html#83\">App\\Entity\\CategoryEntity::removeFilm<\/a>"],[100,2,"<a href=\"Entity\/CategoryEntity.php.html#93\">App\\Entity\\CategoryEntity::getHidden<\/a>"],[0,1,"<a href=\"Entity\/CategoryEntity.php.html#98\">App\\Entity\\CategoryEntity::setHidden<\/a>"],[100,1,"<a href=\"Entity\/CategoryEntity.php.html#106\">App\\Entity\\CategoryEntity::getUrl<\/a>"],[0,1,"<a href=\"Entity\/CommentEntity.php.html#30\">App\\Entity\\CommentEntity::getId<\/a>"],[0,2,"<a href=\"Entity\/CommentEntity.php.html#35\">App\\Entity\\CommentEntity::getContent<\/a>"],[0,1,"<a href=\"Entity\/CommentEntity.php.html#40\">App\\Entity\\CommentEntity::setContent<\/a>"],[100,2,"<a href=\"Entity\/CommentEntity.php.html#47\">App\\Entity\\CommentEntity::getUser<\/a>"],[100,2,"<a href=\"Entity\/CommentEntity.php.html#52\">App\\Entity\\CommentEntity::setUser<\/a>"],[0,1,"<a href=\"Entity\/FilmEntity.php.html#36\">App\\Entity\\FilmEntity::__construct<\/a>"],[0,1,"<a href=\"Entity\/FilmEntity.php.html#41\">App\\Entity\\FilmEntity::getId<\/a>"],[0,2,"<a href=\"Entity\/FilmEntity.php.html#46\">App\\Entity\\FilmEntity::getName<\/a>"],[0,1,"<a href=\"Entity\/FilmEntity.php.html#51\">App\\Entity\\FilmEntity::setName<\/a>"],[0,1,"<a href=\"Entity\/FilmEntity.php.html#61\">App\\Entity\\FilmEntity::getCategory<\/a>"],[0,2,"<a href=\"Entity\/FilmEntity.php.html#66\">App\\Entity\\FilmEntity::addCategory<\/a>"],[0,2,"<a href=\"Entity\/FilmEntity.php.html#75\">App\\Entity\\FilmEntity::removeCategory<\/a>"],[0,2,"<a href=\"Entity\/FilmEntity.php.html#84\">App\\Entity\\FilmEntity::getDescription<\/a>"],[0,1,"<a href=\"Entity\/FilmEntity.php.html#89\">App\\Entity\\FilmEntity::setDescription<\/a>"],[100,1,"<a href=\"Entity\/UserEntity.php.html#41\">App\\Entity\\UserEntity::__construct<\/a>"],[0,1,"<a href=\"Entity\/UserEntity.php.html#46\">App\\Entity\\UserEntity::__toString<\/a>"],[0,1,"<a href=\"Entity\/UserEntity.php.html#52\">App\\Entity\\UserEntity::getId<\/a>"],[100,2,"<a href=\"Entity\/UserEntity.php.html#57\">App\\Entity\\UserEntity::getLogin<\/a>"],[100,1,"<a href=\"Entity\/UserEntity.php.html#62\">App\\Entity\\UserEntity::setLogin<\/a>"],[0,2,"<a href=\"Entity\/UserEntity.php.html#69\">App\\Entity\\UserEntity::getPassword<\/a>"],[0,1,"<a href=\"Entity\/UserEntity.php.html#74\">App\\Entity\\UserEntity::setPassword<\/a>"],[0,2,"<a href=\"Entity\/UserEntity.php.html#81\">App\\Entity\\UserEntity::getEmail<\/a>"],[0,1,"<a href=\"Entity\/UserEntity.php.html#86\">App\\Entity\\UserEntity::setEmail<\/a>"],[0,1,"<a href=\"Entity\/UserEntity.php.html#96\">App\\Entity\\UserEntity::getComment<\/a>"],[0,2,"<a href=\"Entity\/UserEntity.php.html#101\">App\\Entity\\UserEntity::addComment<\/a>"],[0,3,"<a href=\"Entity\/UserEntity.php.html#111\">App\\Entity\\UserEntity::removeComment<\/a>"],[100,1,"<a href=\"Kernel.php.html#18\">App\\Kernel::getCacheDir<\/a>"],[0,1,"<a href=\"Kernel.php.html#23\">App\\Kernel::getLogDir<\/a>"],[100,4,"<a href=\"Kernel.php.html#28\">App\\Kernel::registerBundles<\/a>"],[0,1,"<a href=\"Kernel.php.html#38\">App\\Kernel::configureContainer<\/a>"],[0,1,"<a href=\"Kernel.php.html#53\">App\\Kernel::configureRoutes<\/a>"],[0,1,"<a href=\"Migrations\/Version20180414133926.php.html#13\">DoctrineMigrations\\Version20180414133926::up<\/a>"],[0,1,"<a href=\"Migrations\/Version20180414133926.php.html#27\">DoctrineMigrations\\Version20180414133926::down<\/a>"],[0,1,"<a href=\"Migrations\/Version20180414134827.php.html#13\">DoctrineMigrations\\Version20180414134827::up<\/a>"],[0,1,"<a href=\"Migrations\/Version20180414134827.php.html#30\">DoctrineMigrations\\Version20180414134827::down<\/a>"],[0,1,"<a href=\"Migrations\/Version20180414173140.php.html#13\">DoctrineMigrations\\Version20180414173140::up<\/a>"],[0,1,"<a href=\"Migrations\/Version20180414173140.php.html#31\">DoctrineMigrations\\Version20180414173140::down<\/a>"],[0,1,"<a href=\"Migrations\/Version20180414233116.php.html#13\">DoctrineMigrations\\Version20180414233116::up<\/a>"],[0,1,"<a href=\"Migrations\/Version20180414233116.php.html#36\">DoctrineMigrations\\Version20180414233116::down<\/a>"],[0,1,"<a href=\"Migrations\/Version20180415101506.php.html#13\">DoctrineMigrations\\Version20180415101506::up<\/a>"],[0,1,"<a href=\"Migrations\/Version20180415101506.php.html#41\">DoctrineMigrations\\Version20180415101506::down<\/a>"],[0,1,"<a href=\"Repository\/CategoryEntityRepository.php.html#17\">App\\Repository\\CategoryEntityRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/CategoryEntityRepository.php.html#22\">App\\Repository\\CategoryEntityRepository::findHiddenCategories<\/a>"],[0,1,"<a href=\"Repository\/CategoryEntityRepository.php.html#32\">App\\Repository\\CategoryEntityRepository::findByFirstLetter<\/a>"],[0,1,"<a href=\"Repository\/CommentEntityRepository.php.html#17\">App\\Repository\\CommentEntityRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/FilmEntityRepository.php.html#17\">App\\Repository\\FilmEntityRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/UserEntityRepository.php.html#17\">App\\Repository\\UserEntityRepository::__construct<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
